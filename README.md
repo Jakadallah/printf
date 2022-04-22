@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 0-printf.c-Write a function that produces output according to a format.
 Prototype: int _printf(const char *format, ...);
 Returns: the number of characters printed (excluding the null byte used to end output to strings)
@@ -12,14 +13,26 @@ i
 3_man_printf.c-Create a man page for your function
 
 This is a team project and is part of the first project that ALX gives in order to test what we have learned so far and How to use git in a team setting
+=======
+This is a project about printf tasks.This function named "_printf()" imitates the actual "printf()" command located in the stdio.h library of C programming Language. It contains some of the basic features and functions found in the manual 3 of "printf".
+>>>>>>> ad46a9b0bcb5e0cf3e9122d10c9cf54d73b461b6
 
-Applying variadic functions to a big project while learning to collaborate with others
+_printf() is a function that performs formatted output conversion and print data. Its prototype is the following:
 
-printf function and all its complexities
+  int _printf(const char *format, ...) 
+Where format contains the string that is printed.
 
-And the project is designed in a way that learners will have to do intensive research and apply all we've learned so far
+_printf() is a variadic function, it can receives n arguments that replace by n tags written inside the string.
 
+The format tags prototype is the following:
+
+%[flags][length]specifier
+If the program runs successfully, the return value is the amount of chars printed.
+
+<<<<<<< HEAD
 Authors:
 Nashon Otieno Omondi (JAKADALLAH)
 Everlyne Angwenyi (Nyeve)
 
+=======
+>>>>>>> ad46a9b0bcb5e0cf3e9122d10c9cf54d73b461b6
