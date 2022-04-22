@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-#ifndef MAIN_HEADER_FILE
-#define MAIN_HEADER_FILE
-#include<stdarg.h>;/* va_list*/
-#include <stdlib.h> /* malloc, free */
-#include <unistd.h> /* write */
-#include <stddef.h>
-#include <stdio.h>
-/**
- * struct fmtspec - format specifiers
- *
- * @flag: c, s, f, d ...
- *
- * @fptr: function pointer
- */
-struct fmtspec
-{
-	char *flag;
-	int (*fptr)(va_list);
-};
-typedef struct fmtspec fts;
-int _printf(const char *format, ...);
-int _write_ch(char);
-int print_fmtd(const char *format, fts list[], va_list ap);
-int print_ch(va_list);
-int print_str(va_list);
-int print_pcnt(va_list);
-void _write_str(char *str);
-=======
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
@@ -139,6 +110,4 @@ unsigned int convert_sbase(buffer_t *output, long int num, char *base,
 		unsigned char flags, int wid, int prec);
 unsigned int convert_ubase(buffer_t *output, unsigned long int num, char *base,
 		unsigned char flags, int wid, int prec);
-
->>>>>>> ad46a9b0bcb5e0cf3e9122d10c9cf54d73b461b6
 #endif
